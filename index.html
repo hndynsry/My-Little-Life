@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Little Life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <h2>♡ My Little Life</h2>
+        <span id="today"></span>
+    </header>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <h3>My Space 🌷</h3>
+            <button class="nav-btn active" data-page="home">🏠 Home</button>
+            <button class="nav-btn" data-page="journal">📖 My Journal</button>
+            <button class="nav-btn" data-page="schedule">📅 My Schedule</button>
+            <button class="nav-btn" data-page="memories">📸 My Memories</button>
+            <button class="nav-btn" data-page="wallet">💰 My Wallet</button>
+            <button class="nav-btn" data-page="goals">⭐ My Goals</button>
+        </aside>
+
+        <main class="content">
+
+            <!-- HOME -->
+            <section id="home" class="page active">
+                <div class="welcome">
+                    <h1>Welcome to My Little Life! 💙</h1>
+                    <p>A little place to save my everyday stories.</p>
+                </div>
+
+                <div class="quote">
+                    "Enjoy the little things in life."
+                    <br><small>Every day is a new beginning ♡</small>
+                </div>
+
+                <h2>My Daily Life</h2>
+
+                <div class="cards">
+                    <div class="card">📖<h3>Journal</h3>
+                        <p>Write your story</p></div>
+                    <div class="card">📅<h3>Schedule</h3>
+                        <p>Plan your day</p></div>
+                    <div class="card">📸<h3>Memories</h3>
+                        <p>Save your moments</p></div>
+                    <div class="card">⭐<h3>Goals</h3>
+                        <p>Make your dreams</p></div>
+                </div>
+
+                <div class="box">
+                    <h2>Today's Reminder 🌸</h2>
+                    <p>Don't forget to appreciate yourself today!</p>
+                </div>
+            </section>
+
+            <!-- JOURNAL -->
+            <section id="journal" class="page">
+                <h1>My Journal 📖</h1>
+                <p>Write anything about your day.</p>
+
+                <textarea id="journalText"
+                    placeholder="Dear diary, today I feel..."></textarea>
+
+                <button class="primary" id="saveJournal">Save Story ♡</button>
+
+                <h2>My Stories</h2>
+                <div id="journalList"></div>
+            </section>
+
+            <!-- SCHEDULE -->
+            <section id="schedule" class="page">
+                <h1>My Schedule 📅</h1>
+                <p>Make your daily activity list.</p>
+
+                <input id="taskInput" placeholder="Write your activity...">
+                <button class="primary" id="addTask">Add Activity +</button>
+
+                <ul id="taskList"></ul>
+            </section>
+
+            <!-- MEMORIES -->
+            <section id="memories" class="page">
+                <h1>My Memories 📸</h1>
+                <p>Keep your favorite moments.</p>
+
+                <input id="memoryInput" type="text"
+                    placeholder="Write a memory...">
+                <button class="primary" id="addMemory">Save Memory ♡</button>
+
+                <div id="memoryList"></div>
+            </section>
+
+            <!-- WALLET -->
+            <section id="wallet" class="page">
+                <h1>My Wallet 💰</h1>
+                <p>Manage your daily allowance.</p>
+
+                <div class="wallet-card">
+                    <p>Total Balance</p>
+                    <h2 id="balance">Rp0</h2>
+                </div>
+
+                <input id="amount" type="number"
+                    placeholder="Enter amount (Rp)">
+                <input id="note" placeholder="Description">
+
+                <select id="type">
+                    <option value="in">Money In (+)</option>
+                    <option value="out">Money Out (-)</option>
+                </select>
+
+                <button class="primary" id="addMoney">Save Transaction</button>
+
+                <h2>Transaction History</h2>
+                <ul id="moneyList"></ul>
+            </section>
+
+            <!-- GOALS -->
+            <section id="goals" class="page">
+                <h1>My Goals ⭐</h1>
+                <p>Small steps lead to big dreams.</p>
+
+                <input id="goalInput" placeholder="Write your dream...">
+                <button class="primary" id="addGoal">Add My Goal +</button>
+
+                <ul id="goalList"></ul>
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        Made with ♡ | My Little Life 2026
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
